@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-#define shift_number 3
+#define shift_number 4
 
 void printBits(unsigned int value);
 void printLeadingBits(unsigned int value, int count);
@@ -33,7 +33,7 @@ int main(void)
     printf("Shifted binary value  : ");
     printBits((unsigned int)shifted);
 
-    printf("\nThe right shift vacated the %d leftmost bit positions.\n",shift_number);
+    printf("\nThe right shift vacated the %d leftmost bit positions.\n", shift_number);
     printf("On this system, the new leftmost %d bits are: ", shift_number);
     printLeadingBits((unsigned int)shifted, shift_number);
     putchar('\n');
